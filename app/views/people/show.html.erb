@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<div class="card">
+	<div class="card-section"
+<p>
+  <strong>First name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @person.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @person.email %>
+</p>
+</div>
+</div>
+
+<%= link_to 'Edit', edit_person_path(@person), class:'button' %>
+<%= link_to 'Back', people_path, class:'button secondary' %>
